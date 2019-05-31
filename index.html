@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,10 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
 </head>
-<body>
+<body ng-app="todoApp">
     <h1>Hola mundo!!</h1>
     <p>Proyectode ventas de canastos</p>
-    <button class="btn btn-primary">guardar</button>
+    <div>
+        <label>Name:</label>
+        <input type="text" ng-model="yourName" placeholder="Enter a name here">
+        <hr>
+        <h1>Hello {{yourName}}!</h1>
+      </div>
+    
+    <button class="btn btn-primary" ng-click="guardar()">guardar</button>
 </body>
+</html> -->
+<!doctype html>
+<html ng-app="todoApp">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="todo.js"></script>
+    <script src="canasta.controller.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="todo.css">
+  </head>
+  <body>
+
+        <h1>Hola mundo!!</h1>
+        <p>Proyectode ventas de canastos</p>
+        <div>
+            <label>Name:</label>
+            <input type="text" ng-model="yourName" placeholder="Enter a name here">
+            <hr>
+            <h1>Hello {{yourName}}!</h1>
+          </div>
+        
+        <button class="btn btn-primary" onclick="guardar()">guardar</button>
+
+    </div>
+  </body>
 </html>
